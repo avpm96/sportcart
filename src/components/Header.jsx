@@ -29,12 +29,7 @@ export const Header = ({
 
   return (
     <header>
-   
-
-      <h1>Grocery Store</h1>
-      <div>
-      
-      </div>
+      <div></div>
       <div className="container-icon">
         <div className="container-cart-icon" onClick={() => setActive(!active)}>
           <svg
@@ -98,7 +93,7 @@ export const Header = ({
               </div>
 
               <button className="btn-clear-all" onClick={onCleanCart}>
-              Empty cart
+                Empty cart
               </button>
             </>
           ) : (

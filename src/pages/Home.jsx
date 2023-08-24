@@ -2,12 +2,13 @@ import { useState } from "react";
 import { Header } from "../components/Header";
 import { ProductList } from "../components/ProductList";
 import { Link } from "react-router-dom";
+import { Button } from "@material-tailwind/react";
 export const Home = ({}) => {
   //useState que representa los productos que se a#aden al carrito
   const [allProducts, setAllProducts] = useState([]);
-  // useState para el total 
+  // useState para el total
   const [total, setTotal] = useState(0);
-  //contador de productos 
+  //contador de productos
   const [countProducts, setCountProducts] = useState(0);
   const [stock, setStock] = useState(0);
 
@@ -23,12 +24,7 @@ export const Home = ({}) => {
         stock={stock}
         setStock={setStock}
       />
-      <div className="link">
-        <Link  to="create">
-          Create a new product
-        </Link>
-      </div>
-
+      
       <ProductList
         allProducts={allProducts}
         setAllProducts={setAllProducts}
@@ -39,6 +35,7 @@ export const Home = ({}) => {
         stock={stock}
         setStock={setStock}
       />
+      <Button>Button</Button>;
     </>
   );
 };

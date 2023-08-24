@@ -7,21 +7,22 @@ body {
       $purple 0.6000000000000001px,
       transparent 0.6000000000000001px
     ),
-    radial-gradient($purple 0.6000000000000001px, #e5e5f7 0.6000000000000001px);
+    radial-gradient(purple 0.6000000000000001px, #e5e5f7 0.6000000000000001px);
   background-size: 24px 24px;
   background-position: 0 0, 12px 12px;
+  
 }
 .link-title {
   margin: 10 auto;
   font-family: "Nunito", sans-serif;
-  color: $blue2;
+  color: purple;
   padding-bottom: 40px;
   padding-left: 10px;
   padding-top: 50px;
 }
 .title {
   text-align: center;
-  color: #012970;
+  color: purple;
 }
 .contenedor {
   width: 90%;
@@ -84,7 +85,7 @@ input {
   width: 90%;
   padding: 12px;
   margin: 0.6vw;
-  background-color: $blue;
+  background-color: purple;
   font-size: 1.1rem;
   color: $white;
   font-weight: 600;

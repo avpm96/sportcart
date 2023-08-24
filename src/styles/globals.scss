@@ -7,15 +7,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+.banner {
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 100%;
+  height: 500px;
+  animation: banner 10s infinite linear alternate;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@keyframes banner {
+  0%,
+  20% {
+    background-image: url(/img/tenis2.jpg);
+  }
+  25%,
+  45% {
+    background-image: url(/img/tenis1.jpg);
+  }
+  50%,
+  70% {
+    background-image: url(/img/tenis3.jpg);
+  }
+  75%,
+  100% {
+    background-image: url(/img/tenis4.jpg);
+  }
+
+}
+.capa{
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+}
+.info{
+  z-index: 1;
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+.info h1{
+  color: white;
+  font-size: 45px;
+  margin-bottom: 20px;
+}
 body {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
   font-family: "Nunito", sans-serif;
   color: $blue2;
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #77aa77;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 2 1'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2377aa77'/%3E%3Cstop offset='1' stop-color='%234fd'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='0' y1='0' x2='2' y2='2'%3E%3Cstop offset='0' stop-color='%23cf8' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23cf8' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='2' height='1'/%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23b)' points='0 1 0 0 2 0'/%3E%3Cpolygon fill='url(%23c)' points='2 1 2 0 0 0'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .link {
   margin: 10 auto;
@@ -23,11 +78,13 @@ body {
   color: $blue2;
   padding-bottom: 40px;
   padding-left: 10px;
+  text-decoration: none;
+  color: white;
 }
 .icon-cart {
   width: 40px;
   height: 40px;
-  stroke: $purple;
+  stroke: purple;
 }
 
 .icon-cart:hover {
@@ -54,7 +111,7 @@ header {
   top: 55%;
   right: 0;
 
-  background-color: $purple;
+  background-color: purple;
   color: $white;
   width: 25px;
   height: 25px;
@@ -221,7 +278,7 @@ header {
 }
 
 .btn-clear-all:hover {
-  background-color: $blue5;
+  background-color: purple;
   transform: scale(1.03);
   border-radius: 0;
 }
@@ -232,7 +289,7 @@ header {
   gap: 1vw;
   padding: 12px;
   margin: 0.6vw;
-  background-color: $blue;
+  background-color: purple;
   font-size: 1.1rem;
   color: $white;
   font-weight: 600;
@@ -256,7 +313,6 @@ header {
   border-radius: 10px;
 }
 @media (min-width: $bp-middle) and (max-width: 1280px) and (orientation: landscape) {
-  
   .container-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -282,7 +338,6 @@ header {
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {
- 
   .container-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -290,10 +345,8 @@ header {
   }
 }
 @media (min-width: 320px) and (max-width: $bp-smartphones) {
-  
 }
 @media (min-width: 320px) and (max-width: 658px) {
-  
   .container-cards {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
@@ -302,24 +355,18 @@ header {
 }
 
 @media (min-width: 712px) and (max-width: 1138px) {
-  
 }
 
 @media (min-width: 412px) and (max-width: 896px) {
- 
 }
 
 @media (min-width: 912px) and (max-width: 1368px) {
- 
 }
 
 @media (min-width: 540px) and (max-width: 720px) {
-  
 }
 @media (min-width: 412px) and (max-width: 914px) {
- 
 }
 
 @media (min-width: 412px) and (max-width: 915px) and (-webkit-min-device-pixel-ratio: 2.625) {
-  
 }
